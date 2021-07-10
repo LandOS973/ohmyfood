@@ -1,0 +1,19 @@
+@import "../utils/_variables";
+
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0px;
+    height: 80px;
+    &__logo{
+        font-size: 40px;
+    }
+    &__arrow{
+        height: 25px;
+        position: absolute;
+        left: 15px;
+    }
+
+}
