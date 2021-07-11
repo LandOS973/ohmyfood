@@ -1,0 +1,31 @@
+@mixin roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+@mixin shrikhand {
+    font-family: 'Shrikhand', cursive;  
+}
+
+
+@mixin parentafter{
+    position: relative;
+    z-index: 1;
+    &:hover {
+        &::after {
+            opacity: 1;
+        }
+    }
+}
+
+@mixin after($color:none) {
+    content: " ";
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: opacity 350ms;
+    background-color: $color;
+}
