@@ -1,0 +1,21 @@
+.bloc__svg{
+    svg{
+        height: 30px;
+    }
+}
+.plein{
+    transition: opacity 250ms ease-in-out;
+    opacity: 0;
+}
+.vide{
+    transition: opacity 250ms ease-in-out;
+    opacity: 1;
+}
+.bloc__svg:hover{
+    > .plein{
+        opacity: 1;
+    }
+    > .vide{
+        opacity: 0;
+    }
+}
