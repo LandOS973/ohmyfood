@@ -1,5 +1,22 @@
 @import "../utils/_variables";
 
+header{
+    .head__img{
+        width: 105%;
+        position: relative;
+        z-index: -1;
+    }
+    .head__img--note{
+        transform: scaleY(1.7);
+        height: 350px;
+        @media (max-width:450px) {
+            transform: scaleY(1.7) scaleX(1.2);
+        }
+    }   
+    width: 100%;
+    overflow: hidden;
+}
+
 .head{
     display: flex;
     justify-content: center;
@@ -7,6 +24,7 @@
     position: relative;
     margin: 0px;
     height: 80px;
+    background-color: white;
     &__logo{
         font-size: 40px;
     }
@@ -15,8 +33,5 @@
         height: 25px;
         left: 20px;
         top: 25px;
-    }
-    &__img{
-        width: 100%;
     }
 }

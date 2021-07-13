@@ -1,0 +1,126 @@
+
+.mainpage{
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-color: #F6F6F6;
+    width: 100%;
+    margin-top: -70px;
+    &__box{
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.titleMain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top:20px;
+    margin-bottom: 40px;
+    svg{
+        position: absolute;
+        top:50%;
+        transform: translateY(-50%);
+        right: 3%;
+    }
+    .title{
+        font-size: 1.6em;
+    }
+}
+
+.entrees,.plats, .desserts{
+    margin-bottom: 40px;
+}
+
+
+.section__title{
+    text-transform: uppercase;
+    border-bottom: 4px solid $terciary;
+    font-size: 18px;
+    font-weight: 300;
+    width: 45px;
+    padding-bottom: 5px;
+}
+
+.card{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    height: 75px;
+    overflow: hidden;
+    .check{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 75px;
+        width: 75px;
+        position: absolute;
+        right: -75px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background-color: $terciary;
+        transition: transform 400ms;
+        img{
+            transition: transform 400ms;
+            width: 25px;
+            transform: rotate(-180deg);
+        }
+    }
+    &:hover{
+        .check{
+            transform: translateX(-75px);
+        }
+        .check img{
+            transform: rotate(360deg);
+        }
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 18px;
+    }
+    &__prix{
+        display: flex;
+        justify-content: space-between;   
+        :nth-child(2){
+            font-weight: 700;
+        }
+    }
+    p{
+        margin: 3px 12px;
+    }
+}
+
+.card--1{
+    @include cardAnimation(50ms);
+}
+
+.card--2{
+    @include cardAnimation(200ms);
+}
+
+.card--3{
+    @include cardAnimation(400ms);
+}
+
+.card--4{
+    @include cardAnimation(500ms);
+}
+
+.box-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+
+.btn--main{
+    font-size: 20px;
+    padding: 15px 50px;
+}

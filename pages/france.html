@@ -20,98 +20,101 @@
     </header>
     <!-- MAIN -->
     <main class="mainpage">
-        <div class="titleMain">
-            <h1>À la française</h1>
-            <div class="bloc__svg">
-                <svg class="plein" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <defs>
-                    <linearGradient id="myGradient" gradientTransform="rotate(90)">
-                        <stop offset="5%"  stop-color="#9356DC" />
-                        <stop offset="95%" stop-color="#FF79DA" />
-                    </linearGradient>
-                    </defs>
-                <path fill="url('#myGradient')" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path>
-                </svg> 
-                <svg class="vide" aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="gray" d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"></path></svg>
+        <div class="mainpage__box">
+            <div class="titleMain">
+                <h1 class="title">À la française</h1>
+                <div class="bloc__svg">
+                    <svg class="plein" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <defs>
+                        <linearGradient id="myGradient" gradientTransform="rotate(90)">
+                            <stop offset="5%"  stop-color="#9356DC" />
+                            <stop offset="95%" stop-color="#FF79DA" />
+                        </linearGradient>
+                        </defs>
+                    <path fill="url('#myGradient')" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path>
+                    </svg> 
+                    <svg class="vide" aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="gray" d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"></path></svg>
+                </div>
+            </div>
+            <!-- ENTREES -->
+            <section class="entrees">
+                <p class="section__title">entrées</p>
+                <div class="card card--1">
+                    <p class="card__title">Tartare de poulpe acidulé</p>
+                    <div class="card__prix">
+                        <p>Aux zestes d'orange</p>
+                        <p>25€</p>
+                    </div>
+                </div>
+                <div class="card card--2">
+                    <p class="card__title">Velouté de légumes d'antan</p>
+                    <div class="card__prix">
+                        <p>Carotte, panais, topinambour</p>
+                        <p>35€</p>
+                    </div>
+                </div>
+                <div class="card card--3">
+                    <p class="card__title">Soupe à l'oignon</p>
+                    <div class="card__prix">
+                        <p>Revisitée</p>
+                        <p>20€</p>
+                    </div>
+                </div>
+            </section>
+            <!-- PLATS -->
+            <section class="plats">
+                <p class="section__title">plats</p>
+                <div class="card card--1">
+                    <p class="card__title">Coquilles Saint-Jacques</p>
+                    <div class="card__prix">
+                        <p>Accompagnées d'une purée de panais</p>
+                        <p>40€</p>
+                    </div>
+                </div>
+                <div class="card  card--2">
+                    <p class="card__title">Magret de canard</p>
+                    <div class="card__prix">
+                        <p>Et parmentier de pommes de terre</p>
+                        <p>35€</p>
+                    </div>
+                </div>
+                <div class="card card--3">
+                    <p class="card__title">Pigeonneau d’Ille-et-Vilaine</p>
+                    <div class="card__prix">
+                        <p>Sur son lit de gnocchis aux légumes</p>
+                        <p>44€</p>
+                    </div>
+                </div>
+            </section>
+            <!-- DESSERTS -->
+            <section class="desserts">
+                <p class="section__title">desserts</p>
+                <div class="card card--1">
+                    <p class="card__title">Pétales de violettes glacés</p>
+                    <div class="card__prix">
+                        <p>Et purée de noisettes</p>
+                        <p>18€</p>
+                    </div>
+                </div>
+                <div class="card card--2">
+                    <p class="card__title">Fondant au chocolat</p>
+                    <div class="card__prix">
+                        <p>Revisité</p>
+                        <p>22€</p>
+                    </div>
+                </div>
+                <div class="card card--3">
+                    <p class="card__title">Millefeuille croustillant</p>
+                    <div class="card__prix">
+                        <p>Myrtilles et pâte d’amande</p>
+                        <p>23€</p>
+                    </div>
+                </div>
+            </section>
+            <div class="box-btn">
+                <a class="btn btn--main" href="#commander">Commander</a>
             </div>
         </div>
-        <!-- ENTREES -->
-        <section class="entrees">
-            <p>entrées</p>
-            <div class="card">
-                <p class="card__title">Tartare de poulpe acidulé</p>
-                <div class="card__prix">
-                    <p>Aux zestes d'orange</p>
-                    <p>25€</p>
-                </div>
-            </div>
-            <div class="card">
-                <p class="card__title">Velouté de légumes d'antan</p>
-                <div class="card__prix">
-                    <p>Carotte, panais, topinambour</p>
-                    <p>35€</p>
-                </div>
-            </div>
-            <div class="card">
-                <p class="card__title">Soupe à l'oignon</p>
-                <div class="card__prix">
-                    <p>Revisitée</p>
-                    <p>20€</p>
-                </div>
-            </div>
-        </section>
-        <!-- PLATS -->
-        <section class="plats">
-            <p>plats</p>
-            
-            <div class="card">
-                <p class="card__title">Coquilles Saint-Jacques</p>
-                <div class="card__prix">
-                    <p>Accompagnées d'une purée de panais</p>
-                    <p>40€</p>
-                </div>
-            </div>
-            <div class="card">
-                <p class="card__title">Magret de canard</p>
-                <div class="card__prix">
-                    <p>Et parmentier de pommes de terre</p>
-                    <p>35€</p>
-                </div>
-            </div>
-            <div class="card">
-                <p class="card__title">Pigeonneau d’Ille-et-Vilaine</p>
-                <div class="card__prix">
-                    <p>Sur son lit de gnocchis aux légumes</p>
-                    <p>44€</p>
-                </div>
-            </div>
-        </section>
-        <!-- DESSERTS -->
-        <section class="desserts">
-            <p>desserts</p>
-            <div class="card">
-                <p class="card__title">Pétales de violettes glacés</p>
-                <div class="card__prix">
-                    <p>Et purée de noisettes</p>
-                    <p>18€</p>
-                </div>
-            </div>
-            <div class="card">
-                <p class="card__title">Fondant au chocolat</p>
-                <div class="card__prix">
-                    <p>Revisité</p>
-                    <p>22€</p>
-                </div>
-            </div>
-            <div class="card">
-                <p class="card__title">Millefeuille croustillant</p>
-                <div class="card__prix">
-                    <p>Myrtilles et pâte d’amande</p>
-                    <p>23€</p>
-                </div>
-            </div>
-        </section>
-        <a href="#commander" class="main__btn"></a>
     </main>
     <!-- FOOTER -->
     <footer>
