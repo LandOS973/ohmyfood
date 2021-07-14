@@ -78,25 +78,41 @@
         .check img{
             transform: rotate(360deg);
         }
+        .card__prix{
+            :nth-child(2){
+                transform: translateX(-75px);
+                margin-left: 80px;
+                margin-top: -25px;
+                padding-top:-25px;
+            }
+        }
     }
     &__title{
         font-weight: 700;
         font-size: 18px;
+        border:1px solid black;
+        float: left;
     }
     &__prix{
         display: flex;
-        justify-content: space-between;   
+        justify-content: space-between; 
         :nth-child(2){
             font-weight: 700;
+            transition: transform 400ms;
+            width: 60px;
+            border:1px solid black;
         }
     }
     p{
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
         margin: 3px 12px;
     }
 }
 
 .card--1{
-    @include cardAnimation(50ms);
+    @include cardAnimation(100ms);
 }
 
 .card--2{
