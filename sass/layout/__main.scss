@@ -30,8 +30,18 @@
     }
 }
 
+.menu{
+    @media (min-width:768px) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
 .entrees,.plats, .desserts{
     margin-bottom: 40px;
+    @media (min-width:768px) {
+        width: 30%;
+    }
 }
 
 
@@ -46,68 +56,72 @@
 
 .card{
     background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 20px;
     border-radius: 15px;
+    margin-bottom: 25px;
+    position: relative;
     height: 75px;
     overflow: hidden;
-    .check{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 75px;
-        width: 75px;
-        position: absolute;
-        right: -75px;
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
-        background-color: $terciary;
-        transition: transform 400ms;
-        img{
-            transition: transform 400ms;
-            width: 25px;
-            transform: rotate(-180deg);
-        }
-    }
+    box-shadow: 1px 1px 16px -8px rgb(0 0 0 / 75%); ;
     &:hover{
         .check{
-            transform: translateX(-75px);
+            transform: translateX(-74px);
+        }
+        .price{
+            transform: translateX(-74px);
+            margin-left: 90px;
         }
         .check img{
             transform: rotate(360deg);
         }
-        .card__prix{
-            :nth-child(2){
-                transform: translateX(-75px);
-                margin-left: 80px;
-                margin-top: -25px;
-                padding-top:-25px;
-            }
-        }
     }
-    &__title{
-        font-weight: 700;
-        font-size: 18px;
-        border:1px solid black;
-        float: left;
-    }
-    &__prix{
+    .menu_and_price{
         display: flex;
-        justify-content: space-between; 
-        :nth-child(2){
-            font-weight: 700;
-            transition: transform 400ms;
-            width: 60px;
-            border:1px solid black;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+    .price{
+        margin-right: 15px;
+        margin-bottom:-5px;
+        align-self: flex-end;
+        font-weight: 700;
+        margin-left: 10px;
+        transition: transform 0.5s ease, margin-left 0.5s ease;
+    }
+    .check{
+        background-color: $terciary;
+        position: absolute;
+        right: -75px;
+        top:0px;
+        width: 75px;
+        height: 75px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        margin-left: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.5s ease;
+        img{
+            height: 25px;
+            transition: transform 0.5s ease;
         }
+    }
+    .menu_food{
+        line-height: 17px;
+        text-overflow: ellipsis;
+        overflow:hidden;
+        white-space: nowrap;
+        margin-left: 15px;
+    }
+    .menu_title{
+        font-weight: 700;
     }
     p{
+        font-size: 1em;
         text-overflow: ellipsis;
-        overflow: hidden;
+        overflow:hidden;
         white-space: nowrap;
-        margin: 3px 12px;
     }
 }
 
