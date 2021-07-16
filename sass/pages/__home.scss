@@ -144,6 +144,10 @@ h1{
         margin-right: auto;
     }
     &__card{
+        &:hover{
+            transform: scale(1.05);
+        }
+        transition: transform 0.35s ease-in-out;
         border-bottom: 50px;
         text-decoration: none;
         color:black;
