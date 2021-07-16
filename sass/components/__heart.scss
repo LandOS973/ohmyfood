@@ -5,6 +5,7 @@
 }
 .plein{
     opacity: 0;
+    transition: opacity 250ms ease-in-out;
 }
 .vide{
     opacity: 1;
@@ -12,8 +13,7 @@
 }
 .bloc__svg:hover{
     > .plein{
-        opacity: 1;
-        transition: opacity 250ms ease-in-out;
+        opacity: 1;       
     }
     > .vide{
         opacity: 0;
