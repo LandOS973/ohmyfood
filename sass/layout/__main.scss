@@ -30,8 +30,18 @@
     }
 }
 
+.menu{
+    @media (min-width:768px) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
 .entrees,.plats, .desserts{
     margin-bottom: 40px;
+    @media (min-width:768px) {
+        width: 30%;
+    }
 }
 
 
@@ -54,10 +64,10 @@
     box-shadow: 1px 1px 16px -8px rgb(0 0 0 / 75%); ;
     &:hover{
         .check{
-            transform: translateX(-75px);
+            transform: translateX(-74px);
         }
         .price{
-            transform: translateX(-75px);
+            transform: translateX(-74px);
             margin-left: 90px;
         }
         .check img{

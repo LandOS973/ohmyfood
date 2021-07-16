@@ -1,20 +1,25 @@
 @import "../utils/_variables";
 
 header{
+    width: 100%;
+    overflow-x: hidden;
     .head__img{
         width: 105%;
         position: relative;
         z-index: -1;
+        @media(min-width:550px) {
+            height: 350px;
+            object-fit: cover;
+        }
     }
     .head__img--note{
         transform: scaleY(1.7);
         height: 350px;
-        @media (max-width:450px) {
-            transform: scaleY(1.7) scaleX(1.2);
+        transform: scaleY(1.7) scaleX(1.2);
+        @media(min-width:550px) {
+            transform: scale(1);
         }
     }   
-    width: 100%;
-    overflow: hidden;
 }
 
 .head{
