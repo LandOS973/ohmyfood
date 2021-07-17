@@ -7,7 +7,7 @@
     @include parentafter;
     &::after{
         @include after();
-        background: linear-gradient(#e25fbd,#7f46c5) ;
+        background: linear-gradient(#f387d6,#c18eff) ;
         box-shadow: 5px 5px 5px rgb(184, 178, 178);
         border-radius: 30px;
     }
