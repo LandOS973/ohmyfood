@@ -9,7 +9,7 @@
     <title>Home</title>
 </head>
 
-<body>
+<body class="home_body">
     <!-- PARTIE EN TÊTE -->
     <header>
         <div class="head head--home">
@@ -21,7 +21,7 @@
         <!-- LOADER -->
         <div class="loader">
             <div class="loader_circles"></div>
-            <div class="chargement">
+            <div class="loader_chargement">
                 <p>Chargement</p>
                 <p>.</p>
                 <p>.</p>
@@ -30,7 +30,7 @@
         </div>
         <!-- BLOC LOCALISATION -->
         <div class="loc">
-            <img src="./Maquettes Ohmyfood/images/icons/map-marker-alt-solid (1).svg" alt="icon" srcset="">
+            <img src="./MaquettesOhmyfood/images/icons/map-marker-alt-solid.svg" alt="icon">
             <p>Paris, Belleville</p>
         </div>
         <div class="explo_fonction">
@@ -82,20 +82,16 @@
         </div>
         <!-- BLOC RESTAURANTS -->
         <section class="resto">
-            <div class="box_resto">
+            <div class="resto__box">
                 <h1>Restaurants</h1>
                 <a href="./pages/palette.html" class="resto__card resto__card--new">
                     <p class="new">Nouveau</p>
-                    <img class="resto__card__img"
-                        src="./Maquettes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="icon"
-                        srcset="">
+                    <img class="resto__card__img" src="./MaquettesOhmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="icon">
                     <div class="txt">
                         <p>La palette du goût</p>
                         <p>Ménilmontant</p>
                         <div class="bloc__svg">
-                            <svg class="plein" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart"
-                                class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 512 512">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16 plein" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <defs>
                                     <linearGradient id="myGradient" gradientTransform="rotate(90)">
                                         <stop offset="5%" stop-color="#9356DC" />
@@ -106,9 +102,7 @@
                                     d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
                                 </path>
                             </svg>
-                            <svg class="vide" aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart"
-                                class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 512 512">
+                            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16 vide" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path fill="gray"
                                     d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z">
                                 </path>
@@ -119,27 +113,23 @@
                 <a href="./pages/note.html" class="resto__card resto__card--new">
                     <p class="new">Nouveau</p>
                     <img class="resto__card__img resto__card__img--dif"
-                        src="./Maquettes Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="icon" srcset="">
+                        src="./MaquettesOhmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="icon">
                     <div class="txt">
                         <p>La note enchantée</p>
                         <p>Charonne</p>
                         <div class="bloc__svg">
-                            <svg class="plein" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart"
-                                class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 512 512">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="plein svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <defs>
-                                    <linearGradient id="myGradient" gradientTransform="rotate(90)">
+                                    <linearGradient id="myGradient2" gradientTransform="rotate(90)">
                                         <stop offset="5%" stop-color="#9356DC" />
                                         <stop offset="95%" stop-color="#FF79DA" />
                                     </linearGradient>
                                 </defs>
-                                <path fill="url('#myGradient')"
+                                <path fill="url('#myGradient2')"
                                     d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
                                 </path>
                             </svg>
-                            <svg class="vide" aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart"
-                                class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 512 512">
+                            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart" class="vide svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path fill="gray"
                                     d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z">
                                 </path>
@@ -148,29 +138,23 @@
                     </div>
                 </a>
                 <a href="./pages/france.html" class="resto__card">
-                    <img class="resto__card__img"
-                        src="./Maquettes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="icon"
-                        srcset="">
+                    <img class="resto__card__img" src="./MaquettesOhmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="icon">
                     <div class="txt">
                         <p>À la française</p>
                         <p>Cité Rouge</p>
                         <div class="bloc__svg">
-                            <svg class="plein" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart"
-                                class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 512 512">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="plein svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <defs>
-                                    <linearGradient id="myGradient" gradientTransform="rotate(90)">
+                                    <linearGradient id="myGradient3" gradientTransform="rotate(90)">
                                         <stop offset="5%" stop-color="#9356DC" />
                                         <stop offset="95%" stop-color="#FF79DA" />
                                     </linearGradient>
                                 </defs>
-                                <path fill="url('#myGradient')"
+                                <path fill="url('#myGradient3')"
                                     d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
                                 </path>
                             </svg>
-                            <svg class="vide" aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart"
-                                class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 512 512">
+                            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart" class="vide svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path fill="gray"
                                     d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z">
                                 </path>
@@ -179,29 +163,23 @@
                     </div>
                 </a>
                 <a href="./pages/delice.html" class="resto__card">
-                    <img class="resto__card__img"
-                        src="./Maquettes Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                        alt="icon" srcset="">
+                    <img class="resto__card__img" src="./MaquettesOhmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="icon" >
                     <div class="txt">
                         <p>Le délice des sens</p>
                         <p>Folie-Méricourt</p>
                         <div class="bloc__svg">
-                            <svg class="plein" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart"
-                                class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 512 512">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="plein svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <defs>
-                                    <linearGradient id="myGradient" gradientTransform="rotate(90)">
+                                    <linearGradient id="myGradient4" gradientTransform="rotate(90)">
                                         <stop offset="5%" stop-color="#9356DC" />
                                         <stop offset="95%" stop-color="#FF79DA" />
                                     </linearGradient>
                                 </defs>
-                                <path fill="url('#myGradient')"
+                                <path fill="url('#myGradient4')"
                                     d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
                                 </path>
                             </svg>
-                            <svg class="vide" aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart"
-                                class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 512 512">
+                            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart" class="vide svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path fill="gray"
                                     d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z">
                                 </path>
@@ -216,11 +194,11 @@
         <div class="text">
             <p class="title title--bottom">ohmyfood</p>
             <div class="contact">
-                <img src="./Maquettes Ohmyfood/images/icons/utensils-solid.svg" alt="icon" srcset="">
+                <img src="./MaquettesOhmyfood/images/icons/utensils-solid.svg" alt="icon">
                 <p>Proposer un restaurant</p>
             </div>
             <div class="contact">
-                <img src="./Maquettes Ohmyfood/images/icons/hands-helping-solid.svg" alt="icon" srcset="">
+                <img src="./MaquettesOhmyfood/images/icons/hands-helping-solid.svg" alt="icon">
                 <p>Devenir partenaire</p>
             </div>
             <p>Mentions légales</p>

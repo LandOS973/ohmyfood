@@ -1,4 +1,4 @@
-body{
+.home_body{
     overflow: hidden;
     animation: scroll 0.1s 5s forwards;
 }
@@ -210,7 +210,7 @@ h1{
 .resto{
     background-color: $backgroundgrey;
     width: 100%;
-    .box_resto{
+    &__box{
         display: flex;
         flex-wrap: wrap;
         max-width: 1200px;

@@ -17,7 +17,7 @@
     }
 }
 
-@mixin after($color:none) {
+@mixin after($color:transparent) {
     content: " ";
     opacity: 0;
     z-index: -1;
