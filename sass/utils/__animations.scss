@@ -3,11 +3,11 @@
 @keyframes apparitionCard {
     0%{
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(50px) scale(0);
     }
     100%{
         opacity: 1;
-        transform: translateY(0px);
+        transform: translateY(0px) scale(1);
     }
 }
 
@@ -66,7 +66,8 @@
 
 @keyframes disparition {
     100%{
-        transform: scale(0);
+        opacity: 0;
+        transform: scale(0,0.7);
     }
 }
 
@@ -76,3 +77,8 @@
     }
 }
 
+@keyframes move_arrow{
+    100%{
+        transform: rotate(360deg) scale(1.2);
+    }
+}

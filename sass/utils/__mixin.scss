@@ -37,7 +37,7 @@
 @mixin cardAnimation($delay){
     opacity: 0;
     transform: translateY(30px);
-    animation: apparitionCard 700ms $delay ease-in-out forwards;
+    animation: apparitionCard 700ms $delay cubic-bezier(.5,1.58,.34,.82) forwards;
 }
 
 

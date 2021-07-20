@@ -2,24 +2,7 @@
 
 header{
     width: 100%;
-    overflow-x: hidden;
-    .head__img{
-        width: 105%;
-        position: relative;
-        z-index: -1;
-        @media(min-width:550px) {
-            height: 350px;
-            object-fit: cover;
-        }
-    }
-    .head__img--note{
-        transform: scaleY(1.7);
-        height: 350px;
-        transform: scaleY(1.7) scaleX(1.2);
-        @media(min-width:550px) {
-            transform: scale(1);
-        }
-    }   
+    overflow-x: hidden;   
 }
 
 .head{
@@ -36,7 +19,36 @@ header{
     &__arrow{
         position: absolute;
         height: 25px;
-        left: 20px;
-        top: 25px;
+        left: 30px; 
+        top:15px;
+        padding: 10px;
+        border-radius: 50%;
+        &:hover{
+            animation: move_arrow 0.3s ease-in both;
+        }
+        &::after{
+            content: "";
+            background-color: red;
+            position: absolute;
+            left: 50px;
+        }
+    }
+    &__img{
+        width: 105%;
+        position: relative;
+        z-index: -1;
+        @media(min-width:550px) {
+            height: 350px;
+            object-fit: cover;
+        }
+    }
+    &__img--note{
+        transform: scaleY(1.7);
+        height: 350px;
+        transform: scaleY(1.7) scaleX(1.2);
+        @media(min-width:550px) {
+            transform: scale(1);
+        }
     }
 }
+

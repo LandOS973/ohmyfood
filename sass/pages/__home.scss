@@ -1,6 +1,6 @@
 .home_body{
     overflow: hidden;
-    animation: scroll 0.1s 5s forwards;
+    animation: scroll 0.1s 3.5s forwards;
 }
 
 .loader{
@@ -17,7 +17,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: disparition 1s 5s cubic-bezier(.97,0,.95,1.02) both;
+    animation: disparition 0.3s 3.5s cubic-bezier(.97,0,.95,1.02) both;
     p{
         display: inline-block;
         font-size: 75px;
@@ -26,18 +26,18 @@
         }
     }
     p:nth-child(2){
-        animation: fall 1s 0.3s cubic-bezier(.62,1.9,.03,.59) forwards;
+        animation: fall 0.9s 0.3s cubic-bezier(.62,1.9,.03,.59) forwards;
         opacity: 0;
         color: $primary;
     }
     p:nth-child(3){
-        animation: fall 1s 1.3s cubic-bezier(.62,1.9,.03,.59) forwards;
+        animation: fall 0.9s 1.2s cubic-bezier(.62,1.9,.03,.59) forwards;
         opacity: 0;
         color: $secondary;
     }
 
     p:nth-child(4){
-        animation: fall 1s 2.3s cubic-bezier(.62,1.9,.03,.59) forwards;
+        animation: fall 0.8s 2.1s cubic-bezier(.62,1.9,.03,.59) forwards;
         opacity: 0;
         color:$terciary;
     }
@@ -66,7 +66,7 @@
         border-top: 4px solid $secondary;
         border-radius: 50%;
         z-index: 4;
-        animation: circle 4s linear infinite;
+        animation: circle 3.6s linear infinite;
     }
     &_circles::before{
         content: " ";
@@ -81,7 +81,7 @@
         border-top: 4px solid $terciary;
         border-radius: 50%;
         z-index: 4;
-        animation: circle 2s linear infinite;
+        animation: circle 1.8s linear infinite;
     }
 }
 
@@ -232,7 +232,7 @@ h1{
     }
     &__card{
         &:hover{
-            transform: scale(1.05);
+            transform: scale(1.03);
         }
         transition: transform 0.35s ease-in-out;
         border-bottom: 50px;
