@@ -1,3 +1,39 @@
+.loader-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    opacity: 0.8;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    animation: disparition 0.1s 2.75s linear both;
+    &__animfood{
+        height: 200px;
+        position: absolute;
+    }
+    img{
+        margin-left: -80px;
+        position: absolute;
+        top: 0px;
+        height: 200px;
+    }
+    &__animfood img:first-child{
+        animation: rotatePhone 1.7s 0.8s forwards;
+    }
+    &__animfood img:nth-child(2){
+        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%) ;
+        animation: clippop ease-in-out 1.3s forwards,rotatePhone 1.7s 0.8s forwards;
+    }
+    &__animfood img:nth-child(3){
+        opacity: 0;
+        animation: rotatePlate 1.5s 1.2s forwards;
+    }
+}
+
+
 
 .mainpage{
     border-top-left-radius: 40px;
@@ -138,7 +174,7 @@
 
 @for $i from 1 to 11 {
     .card--#{$i}{
-        @include cardAnimation($i*120ms)
+        @include cardAnimation($i*120ms+2.8s)
     }
 }
 

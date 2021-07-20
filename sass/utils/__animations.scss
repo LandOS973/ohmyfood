@@ -67,18 +67,39 @@
 @keyframes disparition {
     100%{
         opacity: 0;
-        transform: scale(0,0.7);
-    }
-}
-
-@keyframes scroll {
-    100%{
-        overflow: inherit;
+        z-index: -10;
     }
 }
 
 @keyframes move_arrow{
     100%{
         transform: rotate(360deg) scale(1.2);
+    }
+}
+
+@keyframes clippop {
+    100%{
+        clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+    }
+}
+
+@keyframes rotatePlate{
+    0%{
+        transform: rotate(0) translateX(0px);
+        opacity: 0;
+    }
+    85%{
+        transform: rotate(360deg) translateX(0px);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(300px);
+    }
+}
+
+@keyframes rotatePhone {
+    100%{
+        transform: rotate(360deg);
+        opacity: 0;
     }
 }

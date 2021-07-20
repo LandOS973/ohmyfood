@@ -1,8 +1,3 @@
-.home_body{
-    overflow: hidden;
-    animation: scroll 0.1s 3.5s forwards;
-}
-
 .loader{
     background-color: white;
     height: 100%;
@@ -17,7 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: disparition 0.3s 3.5s cubic-bezier(.97,0,.95,1.02) both;
+    animation: disparition 0.1s 3.5s cubic-bezier(.97,0,.95,1.02) both;
     p{
         display: inline-block;
         font-size: 75px;
