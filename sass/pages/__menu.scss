@@ -4,12 +4,12 @@
     align-items: center;
     position: fixed;
     top: 0;
-    opacity: 0.8;
-    background-color: white;
+    opacity: 0.9;
+    background-color: #353535;
     height: 100%;
     width: 100%;
     z-index: 10;
-    animation: disparition 0.1s 2.75s linear both;
+    animation: disparition 0.5s 2.75s linear both;
     &__animfood{
         height: 200px;
         position: absolute;
