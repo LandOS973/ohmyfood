@@ -43,11 +43,9 @@ header{
         }
     }
     &__img--note{
-        transform: scaleY(1.7);
-        height: 350px;
-        transform: scaleY(1.7) scaleX(1.2);
+        margin-top: -130px;
         @media(min-width:550px) {
-            transform: scale(1);
+            height: 350px;
         }
     }
 }

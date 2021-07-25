@@ -39,6 +39,7 @@
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     background-color: #F6F6F6;
+    margin-top: -70px;
     @media (max-width:$tablette) {
         width: 100%;
     }
@@ -47,13 +48,18 @@
         margin-right: auto;
         margin-left: auto;
     }
-    margin-top: -70px;
     &__box{
         width: 90%;
         margin-right: auto;
         margin-left: auto;
     }
+    &--note{
+        margin-top: -200px;
+    }
+    
 }
+
+
 
 .titleMain{
     display: flex;
