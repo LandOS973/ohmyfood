@@ -26,12 +26,7 @@ header{
         &:hover{
             animation: move_arrow 0.3s ease-in both;
         }
-        &::after{
-            content: "";
-            background-color: red;
-            position: absolute;
-            left: 50px;
-        }
+
     }
     &__img{
         width: 105%;

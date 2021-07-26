@@ -103,6 +103,14 @@ h1{
         height: 20px;
         margin-right: 18px;
     }
+    &__input{
+        text-decoration: none;
+        background-color: transparent;
+        border: transparent;
+        font-size: 19px;
+        font-weight: 500;
+        width: 150px;
+    }
 }
 
 .explo_fonction{
